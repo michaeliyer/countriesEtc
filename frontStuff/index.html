@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Information</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Country Info Lookup</h1>
+
+    <!-- Toggle Country ID Map -->
+    <button id="toggleMenu">Show Country ID Map</button>
+    <div id="countryIdMenu" class="hidden">
+        <h2>Country ID Map</h2>
+        <ul id="countryList"></ul>
+    </div>
+
+    <!-- Input for Country ID -->
+    <div>
+        <input type="number" id="countryId" placeholder="Enter Country ID" />
+        <button id="fetchById">Get Country Info</button>
+    </div>
+
+    <!-- Input for Country Name -->
+    <div>
+        <input type="text" id="countryName" placeholder="Enter Country Name" />
+        <button id="fetchByName">Search by Country Name</button>
+    </div>
+
+    <!-- Display Area -->
+    <div id="countryInfo">
+        <h2>Details:</h2>
+        <div id="countryDetails"></div>
+    </div>
+
+    <!-- Add Notes Section -->
+    <div>
+        <h2>Add a Note</h2>
+        <input type="number" id="countryIdForNote" placeholder="Enter Country ID" />
+        <textarea id="noteInput" placeholder="Write your note here"></textarea>
+        <button id="addNote">Add Note</button>
+    </div>
+
+    <!-- View Notes for Country -->
+    <div id="notesSection" class="hidden">
+        <h2>Notes for Country</h2>
+        <ul id="notesList"></ul>
+    </div>
+
+    <!-- Search Notes Section -->
+    <div>
+        <h2>Search Notes</h2>
+        <input type="text" id="noteSearchInput" placeholder="Enter keyword to search notes" />
+        <button id="searchNotes">Search Notes</button>
+    </div>
+    <div id="searchResults" class="hidden">
+        <h2>Search Results</h2>
+        <ul id="searchNotesList"></ul>
+    </div>
+    <div>
+        <h2>Search Notes by Country</h2>
+        <select id="countryDropdown">
+            <!-- Dropdown options will be dynamically populated -->
+        </select>
+        <button id="fetchNotesByCountry">Search Notes</button>
+    </div>
+    <div id="notesResult">
+        <h3>Notes:</h3>
+        <ul id="notesList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
